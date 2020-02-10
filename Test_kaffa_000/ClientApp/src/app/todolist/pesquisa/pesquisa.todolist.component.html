@@ -1,0 +1,90 @@
+<h1 class="h4 titulo mb-2">To Do List</h1>
+
+<button class="btn btn-primary mb-2" (click)="adicionarToDoList()">Adicionar Tarefa</button>
+<div class="d-flex justify-content-center" *ngIf="!todolists">
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading ToDoList...
+</div>
+<div *ngIf="todolists">
+
+  <div id="filtrarToDoLists" class="d-flex justify-content-center">
+    <div *ngIf="filtrar">
+      <div class="form-inline d-flex justify-content-center">
+        <div class="form-group mx-sm-1 mb-3">
+          <label for="inputBuscar" class="sr-only">Ex: lavar o carro</label>
+          <input type="text" id="inputBuscar" placeholder="Ex: lavar o carro">
+        </div>
+        <button class="btn btn-outline-secondary mb-3" (click)="filtrarResultados()" [disabled]="ativarSpinnerBuscar">
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="ativarSpinnerBuscar"></span>
+          Buscar...
+        </button>
+      </div>
+    </div>
+
+    <div class="p-2" *ngIf="filtrar">
+      <button class="close " type="button" aria-hidden="true" (click)="exibirFiltro()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div *ngIf="!filtrar">
+      <button class="btn btn-default mb-2" (click)="exibirFiltro()"> <i class="fa fa-search" aria-hidden="true"></i> Filtrar</button>
+    </div>
+
+  </div>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Task Title</th>
+        <th>Task Description</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let td of todolists | paginate: { itemsPerPage: itensNaPag, currentPage: paginaAtual }; let i = index">
+        <td>{{td.taskTitle}}</td>
+        <td style="width:50%">{{td.taskDescription}}</td>
+        <td><button class="btn btn-success btn-sm" (click)="editarToDoList(td)">Editar</button></td>
+
+        <td>
+          <button class="btn btn-danger btn-sm" (click)="setadeletarToDoList(td)" data-toggle="modal" data-target="#exampleModalCenter">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="text-right" *ngIf="possuiPaginas">
+    <pagination-controls class="my-pagination" (pageChange)="paginaAtual = $event"></pagination-controls>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div *ngIf="todolistDeletar">
+  <div class="modal animated bounceIn" id="exampleModalCenter" tabindex="-1" role="dialog"
+       aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Confirmação de Exclusão</h5>
+          <button type="button" class="close" data-dismiss="modal" #fechaModalPeloEventoDeOutroBotao aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-block mb-3">
+          <strong>Deseja realmente deletar essa tarefa?</strong>
+          <br>
+          <br>
+          Nome: {{todolistDeletar.taskTitle}}
+        </div>
+        <div class="modal-footer">
+          <!-- o evendo te fechar o modal esta sendo chamado no ts, ao qual referencia o botao (fechaModalPeloEventoDeOutroBotao) de fechar no modal-->
+          <button class="btn btn-outline-danger btn-sm mb-3" style="margin-right:10px" (click)="DeletarConfirmado()">Deletar</button>
+          <button class="btn btn-outline-success btn-sm mb-3" data-dismiss="modal" (click)="DeletarCancelado()">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

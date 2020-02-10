@@ -1,0 +1,3 @@
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\obj\Debug\netcoreapp3.1\Test_Kaffa_000.Repository.csprojAssemblyReference.cache
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\obj\Debug\netcoreapp3.1\Test_Kaffa_000.Repository.AssemblyInfoInputs.cache
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\obj\Debug\netcoreapp3.1\Test_Kaffa_000.Repository.AssemblyInfo.cs

@@ -1,0 +1,57 @@
+<h4 class="h4 titulo">Cadastro de Tarefa</h4>
+
+<label for="inputTitle" class="sr-only">Título</label>
+<input type="text" id="inputTitle"
+       name="tituloToDoList" placeholder="Título da tarefa"
+       class="form-control mb-2 col-md-6"
+       [(ngModel)]="todolist.taskTitle"
+       #titlex="ngModel"
+       [ngClass]="{
+           'is-invalid':titlex.invalid && (titlex.dirty || titlex.touched),
+           'is-valid':titlex.valid && (titlex.dirty || titlex.touched)
+           }"
+       minlength="10"
+       required />
+<div class="invalid-feedback mb-2" *ngIf="titlex.invalid && (titlex.dirty || titlex.touched)">
+  <div *ngIf="titlex.errors.required">
+    O título da tarefa é de preenchimento obrigatório.
+  </div>
+  <div *ngIf="titlex.errors.minlength">
+    <!-- se o erro for de requided inclui a div no html-->
+    O título da tarefa deve ter mais de 10 caracteres.
+  </div>
+</div>
+
+<label for="inputDescricao" class="sr-only">Descrição</label>
+<input type="text" id="inputDescricao"
+       name="descricaoToDoLIst" placeholder="Descrição da tarefa"
+       class="form-control mb-2 col-md-6"
+       [(ngModel)]="todolist.taskDescription"
+       #descricaox="ngModel"
+       [ngClass]="{
+           'is-invalid':descricaox.invalid && (descricaox.dirty || descricaox.touched),
+           'is-valid':descricaox.valid && (descricaox.dirty || descricaox.touched)
+           }"
+       minlength="50"
+       required />
+<div class="invalid-feedback mb-2" *ngIf="descricaox.invalid && (descricaox.dirty || descricaox.touched)">
+  <div *ngIf="descricaox.errors.required">
+    Descrição da tarefa é de preenchimento obrigatório.
+  </div>
+  <div *ngIf="descricaox.errors.minlength">
+    <!-- se o erro for de requided inclui a div no html-->
+    A descrição da tarefa deve ter mais de 50 caracteres.
+  </div>
+</div>
+
+<div class="form-inline mb-2">
+  <button class="btn btn-primary" style="margin-right:4px" (click)="cadastrar()" [disabled]="ativarSpinner">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="ativarSpinner"></span>
+    Cadastrar
+  </button>
+  <button class="btn btn-secondary" [routerLink]='["/pesquisar-todolist"]'>Cancelar</button>
+</div>
+
+<div class="alert alert-danger mb-2 col-md-4" role="alert" *ngIf="mensagem">
+  {{mensagem}}
+</div>

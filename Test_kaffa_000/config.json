@@ -1,0 +1,7 @@
+﻿{
+  "ConnectionStrings": {
+    "Test_Kaffa": "Server=localhost;Database=Test_Kaffa_000;Uid=root;Pwd=;"
+
+  }
+
+}

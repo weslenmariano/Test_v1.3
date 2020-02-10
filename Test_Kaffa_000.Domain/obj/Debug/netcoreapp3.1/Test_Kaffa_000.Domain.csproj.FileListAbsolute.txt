@@ -1,0 +1,8 @@
+F:\Teste_Kaffa\Test_kaffa_000\Test_Kaffa_000.Domain\bin\Debug\netcoreapp3.1\Test_Kaffa_000.Domain.deps.json
+F:\Teste_Kaffa\Test_kaffa_000\Test_Kaffa_000.Domain\bin\Debug\netcoreapp3.1\Test_Kaffa_000.Domain.dll
+F:\Teste_Kaffa\Test_kaffa_000\Test_Kaffa_000.Domain\bin\Debug\netcoreapp3.1\Test_Kaffa_000.Domain.pdb
+F:\Teste_Kaffa\Test_kaffa_000\Test_Kaffa_000.Domain\obj\Debug\netcoreapp3.1\Test_Kaffa_000.Domain.csprojAssemblyReference.cache
+F:\Teste_Kaffa\Test_kaffa_000\Test_Kaffa_000.Domain\obj\Debug\netcoreapp3.1\Test_Kaffa_000.Domain.AssemblyInfoInputs.cache
+F:\Teste_Kaffa\Test_kaffa_000\Test_Kaffa_000.Domain\obj\Debug\netcoreapp3.1\Test_Kaffa_000.Domain.AssemblyInfo.cs
+F:\Teste_Kaffa\Test_kaffa_000\Test_Kaffa_000.Domain\obj\Debug\netcoreapp3.1\Test_Kaffa_000.Domain.dll
+F:\Teste_Kaffa\Test_kaffa_000\Test_Kaffa_000.Domain\obj\Debug\netcoreapp3.1\Test_Kaffa_000.Domain.pdb

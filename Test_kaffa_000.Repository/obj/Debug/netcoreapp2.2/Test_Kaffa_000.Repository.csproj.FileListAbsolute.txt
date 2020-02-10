@@ -1,0 +1,11 @@
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\bin\Debug\netcoreapp2.2\Test_Kaffa_000.Repository.deps.json
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\bin\Debug\netcoreapp2.2\Test_Kaffa_000.Repository.dll
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\bin\Debug\netcoreapp2.2\Test_Kaffa_000.Repository.pdb
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\bin\Debug\netcoreapp2.2\Test_Kaffa_000.Domain.dll
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\bin\Debug\netcoreapp2.2\Test_Kaffa_000.Domain.pdb
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\obj\Debug\netcoreapp2.2\Test_Kaffa_000.Repository.csprojAssemblyReference.cache
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\obj\Debug\netcoreapp2.2\Test_Kaffa_000.Repository.AssemblyInfoInputs.cache
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\obj\Debug\netcoreapp2.2\Test_Kaffa_000.Repository.AssemblyInfo.cs
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\obj\Debug\netcoreapp2.2\Test_Kaffa_000.Repository.csproj.CopyComplete
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\obj\Debug\netcoreapp2.2\Test_Kaffa_000.Repository.dll
+F:\Teste_Kaffa\Test_kaffa_000\Test_kaffa_000.Repository\obj\Debug\netcoreapp2.2\Test_Kaffa_000.Repository.pdb

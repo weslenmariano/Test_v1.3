@@ -1,0 +1,26 @@
+.titulo {
+  color: #666
+}
+
+.invalid-feedback {
+  display: block
+}
+
+.valid-feedback {
+  display: block
+}
+
+.fa {
+  color: black;
+}
+
+.btn-outline-light:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #808080;
+}
+
+.btn-outline-light {
+  color: #495057;
+  border-color: #ced4da;
+}
